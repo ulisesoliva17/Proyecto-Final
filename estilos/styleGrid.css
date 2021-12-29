@@ -1,0 +1,327 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .conjunto {
+            display: flex;
+            align-items: center;
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+        
+        .titulo {
+            font-family: 'Bebas Neue', cursive;
+            padding-left: 10px;
+        }
+        
+        .nav-b {
+            width: 50px;
+        }
+        
+        .lista {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-right: 10px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .lista li a {
+            padding: 15px 13px;
+            text-decoration: none;
+            font-size: 18px;
+            /* Para que ocupe todo su espacio disponible*/
+            display: block;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        li:hover {
+            background: rgb(199, 151, 235);
+            background: linear-gradient(90deg, rgba(199, 151, 235, 1) 0%, rgba(240, 236, 252, 1) 100%);
+            border-radius: 7%;
+            color: black;
+        }
+        
+        li a:visited {
+            color: black;
+        }
+        
+        .conteiner-abuelo {
+            width: 60%;
+            margin: 20px auto;
+            height: 900px;
+            font-family: 'Roboto', sans-serif;
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(3, 33.3%);
+            grid-template-rows: 60px 300px 300px;
+            grid-template-areas: "ubicacion ubicacion ubicacion" "container1 container2 container3" "container4 container5 container6";
+        }
+        
+        img {
+            width: 200px;
+        }
+        
+        .ubicacion {
+            grid-area: ubicacion;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+        }
+        
+        .container1 {
+            grid-area: container1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container2 {
+            grid-area: container2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container3 {
+            grid-area: container3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container4 {
+            grid-area: container4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container5 {
+            grid-area: container5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container6 {
+            grid-area: container6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        div span {
+            padding-top: 10px;
+        }
+        
+        .container1:hover,
+        .container2:hover,
+        .container3:hover,
+        .container4:hover,
+        .container5:hover,
+        .container6:hover {
+            background-color: #f0ecfc;
+            background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+            border-radius: 10%;
+            transform: translate(15px, 20px);
+        }
+        
+        .prodMasVendidos {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .padre {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+        
+        .hijo {
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hijo img:hover {
+            transform: scale(1.1, 1.1);
+            transition: all 0.5s ease;
+            margin-bottom: 5px;
+        }
+        
+        .anuncio {
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .ultimoLan {
+            width: 70%;
+            margin: 20px auto;
+            font-family: 'Roboto', sans-serif;
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(3, 33.3%);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "caja1 caja2 caja3" "caja1 caja4 caja4";
+        }
+        
+        .caja1 {
+            background-color: rgb(231, 231, 231);
+            border-radius: 5%;
+            grid-area: caja1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .caja1 img {
+            width: 450px;
+        }
+        
+        .caja2 {
+            background-color: rgb(231, 231, 231);
+            grid-area: caja2;
+            border-radius: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .caja3 {
+            background-color: rgb(231, 231, 231);
+            grid-area: caja3;
+            border-radius: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .caja4 {
+            background-color: rgb(231, 231, 231);
+            grid-area: caja4;
+            border-radius: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .caja4 img {
+            width: 250px;
+        }
+        
+        .footer {
+            border-top: solid black 2px;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .footer a {
+            text-decoration: none;
+            margin: 10px;
+            padding-top: 10px;
+        }
+        
+        .footer a img {
+            width: 40px;
+        }
+        
+        @media screen and (max-width: 480px) {
+            .conteiner-abuelo {
+                height: 2200px;
+                gap: 2rem;
+                grid-template-columns: 100%;
+                grid-template-rows: 90px 300px 300px 300px 300px 300px 300px;
+                grid-template-areas: "ubicacion" "container1" "container2 " "container3" "container4" "container5" "container6";
+            }
+            .lista {
+                flex-direction: column;
+                text-align: center;
+            }
+            .conjunto {
+                justify-content: center;
+            }
+            .cajaAbuelo {
+                height: 1000px;
+            }
+            .anuncio {
+                height: 200px;
+            }
+            .ultimoLan {
+                height: 1400px;
+                gap: 2rem;
+                grid-template-columns: 100%;
+                grid-template-rows: 300px 300px 300px 300px;
+                grid-template-areas: "caja1" "caja2" "caja3 " "caja4";
+            }
+            .caja1 img,
+            .caja4 img {
+                width: 200px;
+            }
+        }
+        
+        @media screen and (min-width: 481px) and (max-width:768px) {
+            .conteiner-abuelo {
+                height: 1130px;
+                gap: 2rem;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: 60px 300px 300px 300px;
+                grid-template-areas: "ubicacion ubicacion" "container1 container2 ""container3 container4" "container5 container6";
+            }
+            .lista {
+                flex-direction: column;
+                text-align: center;
+            }
+            .conjunto {
+                justify-content: center;
+            }
+            .cajaAbuelo {
+                height: 1000px;
+            }
+            .ultimoLan {
+                height: 1500px;
+                gap: 2rem;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 300px 300px 300px;
+                grid-template-areas: "caja1 caja1" "caja2 caja3" "caja4 caja4";
+            }
+            .caja1 {
+                flex-direction: row;
+                text-align: center;
+                justify-content: center;
+            }
+            .caja4 {
+                flex-direction: row;
+                text-align: center;
+                justify-content: center;
+            }
+            .caja1 img,
+            .caja4 img {
+                width: 280px;
+            }
+        }
