@@ -1,0 +1,13 @@
+.footer {
+    border-top: solid black 2px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    a {
+        text-decoration: none;
+        margin: 10px;
+        img {
+            width: 40px;
+        }
+    }
+}
