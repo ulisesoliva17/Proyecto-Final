@@ -4,7 +4,6 @@
   box-sizing: border-box; }
 
 header {
-  background-image: white;
   font-family: 'Roboto', sans-serif; }
   header .conjunto {
     display: flex;
@@ -14,30 +13,35 @@ header {
     header .conjunto .logo {
       text-decoration: none;
       list-style: none; }
-  header .titulo {
-    font-family: 'Bebas Neue', cursive;
-    padding-left: 10px; }
-  header .nav-b {
-    width: 50px; }
+      header .conjunto .logo img {
+        width: 50px; }
+    header .conjunto .titulo {
+      font-family: 'Bebas Neue', cursive;
+      padding-left: 10px; }
+      header .conjunto .titulo a {
+        text-decoration: none;
+        list-style: none;
+        color: #000; }
+        header .conjunto .titulo a a:visited {
+          color: #000; }
   header .lista {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 10px;
     list-style: none; }
-    header .lista li a {
-      padding: 15px 13px;
-      text-decoration: none;
-      font-size: 18px;
-      display: block;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  header li a {
+    padding: 15px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000; }
+    header li a:visited {
+      color: #000; }
   header li:hover {
-    background: #c797eb;
-    background: linear-gradient(90deg, #c797eb 0%, #f0ecfc 100%);
-    border-radius: 7%;
-    color: black; }
-  header li a:visited {
-    color: black; }
+    border-bottom: 0.2rem solid #c797eb;
+    color: #000; }
 
 img {
   width: 200px; }
@@ -49,6 +53,7 @@ img {
   font-family: 'Roboto', sans-serif;
   display: grid;
   gap: 1.5rem;
+  color: #000;
   grid-template-columns: repeat(3, 33.3%);
   grid-template-rows: 60px 300px 300px;
   grid-template-areas: "ubicacion ubicacion ubicacion" "container1 container2 container3" "container4 container5 container6"; }
@@ -58,48 +63,68 @@ img {
     font-family: 'Roboto', sans-serif;
     font-size: 30px; }
   .conteiner-abuelo .container1 {
-    grid-area: container1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    grid-area: container1; }
   .conteiner-abuelo .container2 {
-    grid-area: container2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    grid-area: container2; }
   .conteiner-abuelo .container3 {
-    grid-area: container3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    grid-area: container3; }
   .conteiner-abuelo .container4 {
-    grid-area: container4;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    grid-area: container4; }
   .conteiner-abuelo .container5 {
-    grid-area: container5;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    grid-area: container5; }
   .conteiner-abuelo .container6 {
-    grid-area: container6;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    grid-area: container6; }
   .conteiner-abuelo div span {
     padding-top: 10px; }
-  .conteiner-abuelo .container1:hover,
-  .conteiner-abuelo .container2:hover,
-  .conteiner-abuelo .container3:hover,
-  .conteiner-abuelo .container4:hover,
-  .conteiner-abuelo .container5:hover,
+  .conteiner-abuelo .container1:hover {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    border-radius: 10%;
+    transform: translate(15px, 20px); }
+  .conteiner-abuelo .container2:hover {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    border-radius: 10%;
+    transform: translate(15px, 20px); }
+  .conteiner-abuelo .container3:hover {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    border-radius: 10%;
+    transform: translate(15px, 20px); }
+  .conteiner-abuelo .container4:hover {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    border-radius: 10%;
+    transform: translate(15px, 20px); }
+  .conteiner-abuelo .container5:hover {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    border-radius: 10%;
+    transform: translate(15px, 20px); }
   .conteiner-abuelo .container6:hover {
     background-color: #f0ecfc;
     background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
@@ -111,18 +136,14 @@ img {
   text-align: center;
   margin-bottom: 20px; }
 
-.cajaAbuelo .padre {
+.cajaAbuelo .padre, .cajaAbuelo .padre .hijo {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   font-family: 'Roboto', sans-serif; }
   .cajaAbuelo .padre .hijo {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    margin: 30px; }
     .cajaAbuelo .padre .hijo img:hover {
       transform: scale(1.1, 1.1);
       transition: all 0.5s ease;

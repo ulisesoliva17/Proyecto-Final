@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+//MAPA DE COLORES
+$colors:( blanco:#f0ecfc, lila:#c797eb, negro:#000, gris:rgb(231, 231, 231);
+$blanco: map-get($colors, blanco);
+$lila: map-get($colors, lila);
+$negro: map-get($colors, negro);
 header {
-    background-image: white;
     font-family: 'Roboto', sans-serif;
     .conjunto {
         display: flex;
@@ -15,14 +19,22 @@ header {
         .logo {
             text-decoration: none;
             list-style: none;
+            img {
+                width: 50px;
+            }
         }
-    }
-    .titulo {
-        font-family: 'Bebas Neue', cursive;
-        padding-left: 10px;
-    }
-    .nav-b {
-        width: 50px;
+        .titulo {
+            font-family: 'Bebas Neue', cursive;
+            padding-left: 10px;
+            a {
+                text-decoration: none;
+                list-style: none;
+                color: $negro;
+                a:visited {
+                    color: $negro;
+                }
+            }
+        }
     }
     .lista {
         display: flex;
@@ -30,22 +42,25 @@ header {
         justify-content: flex-end;
         padding-right: 10px;
         list-style: none;
-        li a {
+    }
+    li {
+        a {
             padding: 15px 13px;
             text-decoration: none;
             font-size: 18px;
             display: block;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: $negro;
+            &:visited {
+                color: $negro;
+            }
         }
-    }
-    li:hover {
-        background: rgb(199, 151, 235);
-        background: linear-gradient(90deg, rgba(199, 151, 235, 1) 0%, rgba(240, 236, 252, 1) 100%);
-        border-radius: 7%;
-        color: black;
-    }
-    li a:visited {
-        color: black;
+        &:hover {
+            border-bottom: 0.2rem solid $lila;
+            // background: linear-gradient(90deg, rgba(199, 151, 235, 1) 0%, rgba(240, 236, 252, 1) 100%);
+            // border-radius: 7%;
+            color: $negro;
+        }
     }
 }
 

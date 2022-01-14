@@ -1,73 +1,91 @@
-.conteiner-abuelo {
-    width: 60%;
-    margin: 20px auto;
-    height: 900px;
-    font-family: 'Roboto', sans-serif;
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 33.3%);
-    grid-template-rows: 60px 300px 300px;
-    grid-template-areas: "ubicacion ubicacion ubicacion" "container1 container2 container3" "container4 container5 container6";
-    .ubicacion {
-        grid-area: ubicacion;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px;
-    }
-    .container1 {
-        grid-area: container1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .container2 {
-        grid-area: container2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .container3 {
-        grid-area: container3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .container4 {
-        grid-area: container4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .container5 {
-        grid-area: container5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .container6 {
-        grid-area: container6;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    div span {
-        padding-top: 10px;
-    }
-    .container1:hover,
-    .container2:hover,
-    .container3:hover,
-    .container4:hover,
-    .container5:hover,
-    .container6:hover {
-        background-color: #f0ecfc;
-        background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
-        border-radius: 10%;
-        transform: translate(15px, 20px);
-    }
-}
+ //MIXIN PARA EL HOVER DE LAS CAJAS
+ @mixin hoverCajas {
+     background-color: $blanco;
+     background-image: linear-gradient(315deg, $blanco 0%, $lila 74%);
+     border-radius: 10%;
+     transform: translate(15px, 20px);
+ }
+ 
+ //MIXIN DE LAS CAJAS
+ @mixin containers {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .conteiner-abuelo {
+     width: 60%;
+     margin: 20px auto;
+     height: 900px;
+     font-family: 'Roboto', sans-serif;
+     display: grid;
+     gap: 1.5rem;
+     color: $negro;
+     grid-template-columns: repeat(3, 33.3%);
+     grid-template-rows: 60px 300px 300px;
+     grid-template-areas: "ubicacion ubicacion ubicacion" "container1 container2 container3" "container4 container5 container6";
+     .ubicacion {
+         grid-area: ubicacion;
+         text-align: center;
+         font-family: 'Roboto', sans-serif;
+         font-size: 30px;
+     }
+     .container1 {
+         @include containers;
+         grid-area: container1;
+     }
+     .container2 {
+         @include containers;
+         grid-area: container2;
+     }
+     .container3 {
+         @include containers;
+         grid-area: container3;
+     }
+     .container4 {
+         @include containers;
+         grid-area: container4;
+     }
+     .container5 {
+         @include containers;
+         grid-area: container5;
+     }
+     .container6 {
+         @include containers;
+         grid-area: container6;
+     }
+     div span {
+         padding-top: 10px;
+     }
+     .container1 {
+         &:hover {
+             @include hoverCajas;
+         }
+     }
+     .container2 {
+         &:hover {
+             @include hoverCajas;
+         }
+     }
+     .container3 {
+         &:hover {
+             @include hoverCajas;
+         }
+     }
+     .container4 {
+         &:hover {
+             @include hoverCajas;
+         }
+     }
+     .container5 {
+         &:hover {
+             @include hoverCajas;
+         }
+     }
+     .container6 {
+         &:hover {
+             @include hoverCajas;
+         }
+     }
+ }

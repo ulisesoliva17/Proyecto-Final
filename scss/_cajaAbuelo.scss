@@ -11,15 +11,14 @@
         align-items: center;
         font-family: 'Roboto', sans-serif;
         .hijo {
+            @extend .padre;
             margin: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            img:hover {
-                transform: scale(1.1, 1.1);
-                transition: all 0.5s ease;
-                margin-bottom: 5px;
+            img {
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                    transition: all 0.5s ease;
+                    margin-bottom: 5px;
+                }
             }
         }
     }
