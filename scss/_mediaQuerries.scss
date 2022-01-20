@@ -1,9 +1,9 @@
-$height-Caja: 1000px;
 @media screen and (max-width: 480px) {
     body {
         header {
             .conjunto {
                 justify-content: center;
+                margin-bottom: 10px;
             }
             .lista {
                 flex-direction: column;
@@ -18,7 +18,7 @@ $height-Caja: 1000px;
             grid-template-areas: "ubicacion" "container1" "container2 " "container3" "container4" "container5" "container6";
         }
         .cajaAbuelo {
-            height: $height-Caja;
+            height: 1000px;
         }
         .anuncio {
             height: 200px;
@@ -34,6 +34,19 @@ $height-Caja: 1000px;
                 width: 200px;
             }
         }
+        .footer {
+            .container-footer-all {
+                .container-body {
+                    flex-wrap: wrap;
+                    .column2 {
+                        margin-top: 40px;
+                    }
+                    .column3 {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -42,6 +55,7 @@ $height-Caja: 1000px;
         header {
             .conjunto {
                 justify-content: center;
+                margin-bottom: 10px;
             }
             .lista {
                 flex-direction: column;
@@ -58,7 +72,7 @@ $height-Caja: 1000px;
             grid-template-areas: "ubicacion ubicacion" "container1 container2 ""container3 container4" "container5 container6";
         }
         .cajaAbuelo {
-            height: $height-Caja;
+            height: 1000px;
         }
         .ultimoLan {
             height: 1500px;
@@ -80,6 +94,22 @@ $height-Caja: 1000px;
                 justify-content: center;
                 img {
                     width: 280px;
+                }
+            }
+        }
+        .footer {
+            .container-footer-all {
+                .container-body {
+                    flex-wrap: wrap;
+                    .column1 {
+                        max-width: 100%;
+                    }
+                    .column2 {
+                        margin-top: 40px;
+                    }
+                    .column3 {
+                        margin-top: 40px;
+                    }
                 }
             }
         }

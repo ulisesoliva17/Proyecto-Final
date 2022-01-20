@@ -1,0 +1,126 @@
+    @mixin propRazones {
+        width: 70%;
+    }
+    
+    @mixin contenedores {
+        display: flex;
+        flex-direction: row;
+        margin: 15px 80px;
+    }
+    
+    .consulta {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 60px;
+        .pregunta {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.6rem;
+        }
+        .idea {
+            padding-left: 15px;
+            img {
+                width: 35px;
+            }
+        }
+    }
+    
+    .general {
+        display: flex;
+        flex-direction: row;
+        background-image: url('../Imagenes/original\ fondo\ fundas.png');
+        width: 90%;
+        margin: 5px auto;
+        height: 600px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3rem;
+        .razones {
+            margin: 25px;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            img {
+                width: 40px;
+            }
+            .razon1 {
+                @include propRazones;
+            }
+            .razon2 {
+                @include propRazones;
+            }
+            .razon3 {
+                @include propRazones;
+            }
+        }
+        .imagenes {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                width: 300px;
+            }
+            .imagen1 {
+                align-self: flex-end;
+                transform: rotate(20deg);
+                &:hover {
+                    transform: rotate(-20deg);
+                    transition: all 1s ease;
+                }
+            }
+            .imagen2 {
+                align-self: flex-start;
+                transform: rotate(-20deg);
+                &:hover {
+                    transform: rotate(20deg);
+                    transition: all 1s ease;
+                }
+            }
+        }
+    }
+    
+    .tituloBeneficios {
+        margin: 20px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        text-decoration: underline wavy #fcee47;
+    }
+    
+    .beneficiosAdicionales {
+        width: 75%;
+        margin: 15px 25px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .contenedor1 {
+            @include contenedores;
+        }
+        .contenedor2 {
+            @include contenedores;
+        }
+        .contenedor3 {
+            @include contenedores;
+        }
+        .live {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: $lila;
+            animation: pulse 1500ms infinite;
+            list-style: none;
+        }
+        .texto {
+            padding: 0px 15px;
+            font-size: 1.2rem;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: #ff69b4 0 0 0 0;
+            }
+            75% {
+                box-shadow: #ff69b400 0 0 0 14px;
+            }
+        }
+    }

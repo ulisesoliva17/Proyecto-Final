@@ -13,6 +13,9 @@
         .hijo {
             @extend .padre;
             margin: 30px;
+            span {
+                padding: 25px;
+            }
             img {
                 &:hover {
                     transform: scale(1.1, 1.1);

@@ -1,13 +1,88 @@
 .footer {
-    border-top: solid black 2px;
+    background-color: #202020;
     color: white;
-    display: flex;
-    justify-content: flex-end;
-    a {
-        text-decoration: none;
-        margin: 10px;
-        img {
-            width: 40px;
+    width: 100%;
+    margin-top: 50px;
+    .container-footer-all {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px;
+        .container-body {
+            display: flex;
+            justify-content: space-between;
+            .column1 {
+                max-width: 400px;
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #C7C7C7;
+                    margin-top: 20px;
+                }
+            }
+            .column2 {
+                max-width: 400px;
+                h2 {
+                    font-size: 20px;
+                }
+                .row {
+                    margin-top: 20px;
+                    display: flex;
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+                    span {
+                        margin-top: 10px;
+                        margin-left: 20px;
+                        color: #C7C7C7;
+                    }
+                }
+            }
+            .column3 {
+                max-width: 400px;
+                h2 {
+                    font-size: 20px;
+                }
+                .row2 {
+                    margin-top: 20px;
+                    display: flex;
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+                    span {
+                        margin-top: 10px;
+                        margin-left: 20px;
+                        max-width: 140px;
+                    }
+                }
+            }
+        }
+    }
+    .container-footer {
+        width: 100%;
+        background-color: #101010;
+        .ultimo-footer {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            .copyright {
+                color: #C7C7C7;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+            .information {
+                text-decoration: none;
+                color: #C7C7C7;
+            }
         }
     }
 }

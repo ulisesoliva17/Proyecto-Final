@@ -5,10 +5,11 @@
 }
 
 //MAPA DE COLORES
-$colors:( blanco:#f0ecfc, lila:#c797eb, negro:#000, gris:rgb(231, 231, 231);
+$colors:( blanco:#f0ecfc, lila:#c797eb, negro:#000, gris: lightgrey);
 $blanco: map-get($colors, blanco);
 $lila: map-get($colors, lila);
 $negro: map-get($colors, negro);
+$gris:map-get($colors, gris);
 header {
     font-family: 'Roboto', sans-serif;
     .conjunto {
@@ -42,24 +43,60 @@ header {
         justify-content: flex-end;
         padding-right: 10px;
         list-style: none;
-    }
-    li {
-        a {
+        .link {
+            position: relative;
+            display: block;
+            color: $negro;
             padding: 15px 13px;
             text-decoration: none;
+            text-align: center;
             font-size: 18px;
-            display: block;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: $negro;
+            cursor: pointer;
+            width: fit-content;
+            margin: 0 auto 20px;
+            z-index: 0;
+            transition: all 450ms ease;
+            &::after,
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                transition: width 540ms, opacity 300ms ease;
+            }
             &:visited {
                 color: $negro;
             }
         }
-        &:hover {
-            border-bottom: 0.2rem solid $lila;
-            // background: linear-gradient(90deg, rgba(199, 151, 235, 1) 0%, rgba(240, 236, 252, 1) 100%);
-            // border-radius: 7%;
-            color: $negro;
+        .link--1 {
+            padding: 0 15px;
+            &::before,
+            &::after {
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                height: 0.1rem;
+                width: 0;
+            }
+            &::before {
+                left: 0;
+            }
+            &::after {
+                background-color: $lila;
+                right: 0;
+            }
+            &:hover {
+                color: $lila;
+                &::before {
+                    width: 60%;
+                    transition: width 250ms ease;
+                    background-color: $lila;
+                }
+                &::after {
+                    width: 100%;
+                    background-color: transparent;
+                }
+            }
         }
     }
 }
