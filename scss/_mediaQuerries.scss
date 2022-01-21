@@ -34,6 +34,70 @@
                 width: 200px;
             }
         }
+        .consulta {
+            width: 100%;
+            text-align: center;
+            flex-direction: column;
+            .idea {
+                img {
+                    width: 25px;
+                }
+            }
+        }
+        .general {
+            flex-direction: column;
+            height: 1500px;
+            .razones {
+                width: 80%;
+                align-items: center;
+                .razon1 {
+                    margin: 30px 0px;
+                    width: 80%;
+                }
+                .razon2 {
+                    margin: 30px 0px;
+                    width: 80%;
+                }
+                .razon3 {
+                    margin: 30px 0px;
+                    width: 80%;
+                }
+            }
+            .imagenes {
+                width: 100%;
+                align-items: center;
+                img {
+                    width: 250px;
+                }
+                .imagen1 {
+                    align-self: center;
+                    width: 50%;
+                    margin-bottom: 70px;
+                }
+                .imagen2 {
+                    align-self: center;
+                    width: 50%;
+                }
+            }
+        }
+        .tituloBeneficio {
+            width: 100%;
+        }
+        .beneficiosAdicionales {
+            .contenedor1 {
+                width: 90%;
+            }
+            .contenedor2 {
+                width: 90%;
+            }
+            .contenedor3 {
+                width: 90%;
+            }
+        }
+        .mapa {
+            width: 80%;
+            margin: auto;
+        }
         .footer {
             .container-footer-all {
                 .container-body {
@@ -97,8 +161,54 @@
                 }
             }
         }
+        .consulta {
+            width: 100%;
+            text-align: center;
+            .idea {
+                img {
+                    width: 25px;
+                }
+            }
+        }
+        .general {
+            flex-direction: column;
+            height: 1450px;
+            .razones {
+                width: 100%;
+                align-items: center;
+                .razon1 {
+                    margin: 30px 0px;
+                    width: 80%;
+                }
+                .razon2 {
+                    margin: 30px 0px;
+                    width: 80%;
+                }
+                .razon3 {
+                    margin: 30px 0px;
+                    width: 80%;
+                }
+            }
+            .imagenes {
+                width: 100%;
+                img {
+                    margin: 30px;
+                }
+                .imagen1 {
+                    align-self: center;
+                }
+                .imagen2 {
+                    align-self: center;
+                }
+            }
+        }
+        .mapa {
+            width: 90%;
+            margin: auto;
+        }
         .footer {
             .container-footer-all {
+                width: 100%;
                 .container-body {
                     flex-wrap: wrap;
                     .column1 {
