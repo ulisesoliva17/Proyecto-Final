@@ -625,3 +625,22 @@ img {
   height: auto;
   overflow: hidden;
   text-align: center; }
+
+.container-amplio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif; }
+  .container-amplio img {
+    width: 130vh; }
+  .container-amplio .titulos404 {
+    margin: 20px;
+    font-size: 1.8rem; }
+  .container-amplio .enlaces404 .link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem; }
+    .container-amplio .enlaces404 .link:hover {
+      text-decoration: underline wavy #c797eb; }
