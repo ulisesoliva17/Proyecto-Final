@@ -14,7 +14,8 @@ header .conjunto {
     header .conjunto .logo img {
       width: 50px; }
   header .conjunto .titulo h1 {
-    font-family: 'Bebas Neue', cursive; }
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px; }
     header .conjunto .titulo h1 a {
       padding-left: 10px;
       text-decoration: none;
@@ -179,7 +180,8 @@ img {
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem; }
   .cajaAbuelo .padre .hijo {
     margin: 30px; }
     .cajaAbuelo .padre .hijo span {
@@ -255,15 +257,20 @@ img {
       .footer .container-footer-all .container-body .column1 {
         max-width: 400px; }
         .footer .container-footer-all .container-body .column1 h2 {
-          font-size: 20px; }
+          font-family: 'Bebas Neue', cursive;
+          font-size: 20px;
+          letter-spacing: 2px; }
         .footer .container-footer-all .container-body .column1 p {
           font-size: 14px;
           color: #C7C7C7;
-          margin-top: 20px; }
+          margin-top: 20px;
+          font-family: 'Roboto', sans-serif; }
       .footer .container-footer-all .container-body .column2 {
         max-width: 400px; }
         .footer .container-footer-all .container-body .column2 h2 {
-          font-size: 20px; }
+          font-size: 20px;
+          font-family: 'Bebas Neue', cursive;
+          letter-spacing: 2px; }
         .footer .container-footer-all .container-body .column2 .row {
           margin-top: 20px;
           display: flex; }
@@ -273,11 +280,14 @@ img {
           .footer .container-footer-all .container-body .column2 .row span {
             margin-top: 10px;
             margin-left: 20px;
-            color: #C7C7C7; }
+            color: #C7C7C7;
+            font-family: 'Roboto', sans-serif; }
       .footer .container-footer-all .container-body .column3 {
         max-width: 400px; }
         .footer .container-footer-all .container-body .column3 h2 {
-          font-size: 20px; }
+          font-size: 20px;
+          font-family: 'Bebas Neue', cursive;
+          letter-spacing: 2px; }
         .footer .container-footer-all .container-body .column3 .row2 {
           margin-top: 20px;
           display: flex; }
@@ -287,7 +297,8 @@ img {
           .footer .container-footer-all .container-body .column3 .row2 span {
             margin-top: 10px;
             margin-left: 20px;
-            max-width: 140px; }
+            max-width: 140px;
+            font-family: 'Roboto', sans-serif; }
   .footer .container-footer {
     width: 100%;
     background-color: #101010; }
@@ -298,14 +309,16 @@ img {
       margin: auto;
       padding: 20px; }
       .footer .container-footer .ultimo-footer .copyright {
-        color: #C7C7C7; }
+        color: #C7C7C7;
+        font-family: 'Roboto', sans-serif; }
         .footer .container-footer .ultimo-footer .copyright a {
           text-decoration: none;
           color: white;
           font-weight: bold; }
       .footer .container-footer .ultimo-footer .information {
         text-decoration: none;
-        color: #C7C7C7; }
+        color: #C7C7C7;
+        font-family: 'Roboto', sans-serif; }
 
 @media screen and (max-width: 480px) {
   body header .conjunto {
@@ -377,6 +390,16 @@ img {
   body .mapa {
     width: 80%;
     margin: auto; }
+  body .img404 {
+    width: 70vh; }
+  body .container-magsafe .parrafo-magsafe {
+    width: 90%; }
+  body .container-img-magsafe .imagenes-magsafe .img1-magsafe {
+    align-self: center;
+    width: 140px; }
+  body .container-img-magsafe .imagenes-magsafe .img2-magsafe {
+    align-self: center;
+    width: 240px; }
   body .footer .container-footer-all .container-body {
     flex-wrap: wrap; }
     body .footer .container-footer-all .container-body .column2 {
@@ -644,3 +667,51 @@ img {
     font-size: 1.6rem; }
     .container-amplio .enlaces404 .link:hover {
       text-decoration: underline wavy #c797eb; }
+
+.container-magsafe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center; }
+  .container-magsafe .titulo-magsafe {
+    background-image: url("../Imagenes/fondo magsafe titulo 1.png");
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    padding: 40px 0px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center; }
+  .container-magsafe .parrafo-magsafe {
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    line-height: 2.2em; }
+
+.container-img-magsafe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 30px 0px; }
+  .container-img-magsafe .imagenes-magsafe {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 0px; }
+    .container-img-magsafe .imagenes-magsafe .img1-magsafe {
+      width: 200px;
+      padding: 20px 0px;
+      align-self: end; }
+      .container-img-magsafe .imagenes-magsafe .img1-magsafe:hover {
+        transform: scale(1.2, 1.2);
+        transition: all 0.5s ease;
+        margin-bottom: 5px; }
+    .container-img-magsafe .imagenes-magsafe .img2-magsafe {
+      width: 300px;
+      padding: 20px 0px;
+      align-self: start; }
+      .container-img-magsafe .imagenes-magsafe .img2-magsafe:hover {
+        transform: scale(1.1, 1.1);
+        transition: all 0.5s ease;
+        margin-bottom: 5px; }

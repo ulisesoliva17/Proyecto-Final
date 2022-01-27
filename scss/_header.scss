@@ -5,11 +5,12 @@
     }
     
     //MAPA DE COLORES
-    $colors:( blanco:#f0ecfc, lila:#c797eb, negro:#000, gris: lightgrey);
+    $colors:( blanco:#f0ecfc, lila:#c797eb, amarillo:#fcee47, negro:#000, gris: lightgrey);
     $blanco: map-get($colors, blanco);
     $lila: map-get($colors, lila);
     $negro: map-get($colors, negro);
     $gris:map-get($colors, gris);
+    $amarillo:map-get($colors, amarillo);
     header {
         .conjunto {
             display: flex;
@@ -26,6 +27,7 @@
             .titulo {
                 h1 {
                     font-family: 'Bebas Neue', cursive;
+                    letter-spacing: 1px;
                     a {
                         padding-left: 10px;
                         text-decoration: none;
