@@ -1,10 +1,8 @@
-.title {
-    h1 {
-        text-align: center;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 2.2rem;
-        margin: 20px;
-    }
+@mixin titles {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.2rem;
+    margin: 20px;
 }
 
 @mixin inputTextarea {
@@ -18,6 +16,15 @@
     border-radius: 2px;
     font-size: 14px;
     color: white;
+}
+
+.title {
+    h1 {
+        @include titles;
+    }
+    h2 {
+        @include titles;
+    }
 }
 
 .formulario {

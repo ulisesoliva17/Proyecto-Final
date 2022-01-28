@@ -35,58 +35,46 @@
     .container1 {
         @include containers;
         grid-area: container1;
+        &:hover {
+            @include hoverCajas;
+        }
     }
     .container2 {
         @include containers;
         grid-area: container2;
+        &:hover {
+            @include hoverCajas;
+        }
     }
     .container3 {
         @include containers;
         grid-area: container3;
+        &:hover {
+            @include hoverCajas;
+        }
     }
     .container4 {
         @include containers;
         grid-area: container4;
+        &:hover {
+            @include hoverCajas;
+        }
     }
     .container5 {
         @include containers;
         grid-area: container5;
+        &:hover {
+            @include hoverCajas;
+        }
     }
     .container6 {
         @include containers;
         grid-area: container6;
+        &:hover {
+            @include hoverCajas;
+        }
     }
     div span {
         padding-top: 15px;
-    }
-    .container1 {
-        &:hover {
-            @include hoverCajas;
-        }
-    }
-    .container2 {
-        &:hover {
-            @include hoverCajas;
-        }
-    }
-    .container3 {
-        &:hover {
-            @include hoverCajas;
-        }
-    }
-    .container4 {
-        &:hover {
-            @include hoverCajas;
-        }
-    }
-    .container5 {
-        &:hover {
-            @include hoverCajas;
-        }
-    }
-    .container6 {
-        &:hover {
-            @include hoverCajas;
-        }
     }
 }
