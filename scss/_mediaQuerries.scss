@@ -101,6 +101,20 @@
         .img404 {
             width: 70vh;
         }
+        //PAGINA 404
+        .container-amplio {
+            .img404 {
+                width: 100%;
+                text-align: center;
+                img {
+                    width: 350px;
+                }
+            }
+            .titulos404 {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
         // CABLES
         .container-magsafe {
             .parrafo-magsafe {
@@ -226,6 +240,20 @@
         .mapa {
             width: 90%;
             margin: auto;
+        }
+        //PAGINA 404
+        .container-amplio {
+            .img404 {
+                width: 100%;
+                text-align: center;
+                img {
+                    width: 450px;
+                }
+            }
+            .titulos404 {
+                font-size: 1.2rem;
+                text-align: center;
+            }
         }
         .footer {
             .container-footer-all {

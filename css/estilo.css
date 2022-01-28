@@ -392,6 +392,14 @@ img {
     margin: auto; }
   body .img404 {
     width: 70vh; }
+  body .container-amplio .img404 {
+    width: 100%;
+    text-align: center; }
+    body .container-amplio .img404 img {
+      width: 350px; }
+  body .container-amplio .titulos404 {
+    font-size: 1.2rem;
+    text-align: center; }
   body .container-magsafe .parrafo-magsafe {
     width: 90%; }
   body .container-img-magsafe .imagenes-magsafe .img1-magsafe {
@@ -473,6 +481,14 @@ img {
   body .mapa {
     width: 90%;
     margin: auto; }
+  body .container-amplio .img404 {
+    width: 100%;
+    text-align: center; }
+    body .container-amplio .img404 img {
+      width: 450px; }
+  body .container-amplio .titulos404 {
+    font-size: 1.2rem;
+    text-align: center; }
   body .footer .container-footer-all {
     width: 100%; }
     body .footer .container-footer-all .container-body {
@@ -657,16 +673,10 @@ img {
   margin: 20px;
   font-family: 'Roboto', sans-serif; }
   .container-amplio img {
-    width: 130vh; }
+    width: 850px; }
   .container-amplio .titulos404 {
     margin: 20px;
     font-size: 1.8rem; }
-  .container-amplio .enlaces404 .link {
-    text-decoration: none;
-    color: black;
-    font-size: 1.6rem; }
-    .container-amplio .enlaces404 .link:hover {
-      text-decoration: underline wavy #c797eb; }
 
 .container-magsafe {
   display: flex;
