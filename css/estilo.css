@@ -747,10 +747,10 @@ img {
         margin-bottom: 5px; }
 
 .clasificacion {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 25px; }
   .clasificacion .clasificacion-titulo {
     display: table;
-    width: 100%;
     margin: auto;
     padding-bottom: 25px; }
     .clasificacion .clasificacion-titulo h2 {
