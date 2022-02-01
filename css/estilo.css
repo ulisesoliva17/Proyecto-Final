@@ -396,8 +396,6 @@ img {
     padding: 20px; }
     body .clasificacion .clasificacion-titulo h2 {
       text-align: center; }
-      body .clasificacion .clasificacion-titulo h2 span {
-        display: none; }
     body .clasificacion .info-clasificacion {
       width: 80%;
       height: 200px; }
