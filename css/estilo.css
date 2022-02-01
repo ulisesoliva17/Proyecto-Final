@@ -392,6 +392,15 @@ img {
     margin: auto; }
   body .img404 {
     width: 70vh; }
+  body .clasificacion {
+    padding: 20px; }
+    body .clasificacion .clasificacion-titulo h2 {
+      text-align: center; }
+      body .clasificacion .clasificacion-titulo h2 span {
+        display: none; }
+    body .clasificacion .info-clasificacion {
+      width: 80%;
+      height: 200px; }
   body .container-amplio .img404 {
     width: 100%;
     text-align: center; }
@@ -481,6 +490,11 @@ img {
   body .mapa {
     width: 90%;
     margin: auto; }
+  body .clasificacion {
+    padding: 20px; }
+    body .clasificacion .info-clasificacion {
+      width: 80%;
+      height: 200px; }
   body .container-amplio .img404 {
     width: 100%;
     text-align: center; }
@@ -731,3 +745,39 @@ img {
         transform: scale(1.1, 1.1);
         transition: all 0.5s ease;
         margin-bottom: 5px; }
+
+.clasificacion {
+  width: 100%; }
+  .clasificacion .clasificacion-titulo {
+    display: table;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 25px; }
+    .clasificacion .clasificacion-titulo h2 {
+      position: relative; }
+      .clasificacion .clasificacion-titulo h2 span {
+        position: absolute;
+        right: 0;
+        width: 0;
+        border-left: 1px solid #000;
+        animation: maquina 5s infinite alternate steps(42);
+        background: white; }
+
+@keyframes maquina {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
+  .clasificacion .info-clasificacion {
+    width: 50%;
+    height: 150px;
+    margin: auto;
+    border: 3px solid #c797eb;
+    white-space: wrap;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    resize: both; }

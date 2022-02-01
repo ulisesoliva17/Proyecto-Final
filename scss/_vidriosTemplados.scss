@@ -1,0 +1,43 @@
+.clasificacion {
+    width: 100%;
+    .clasificacion-titulo {
+        display: table;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 25px;
+        h2 {
+            position: relative;
+            span {
+                position: absolute;
+                right: 0;
+                width: 0;
+                border-left: 1px solid $negro;
+                animation: maquina 5s infinite alternate steps(42);
+                background: white;
+            }
+        }
+        @keyframes maquina {
+            from {
+                width: 100%;
+            }
+            to {
+                width: 0;
+            }
+        }
+    }
+    .info-clasificacion {
+        width: 50%;
+        height: 150px;
+        margin: auto;
+        border: 3px solid $lila;
+        white-space: wrap;
+        letter-spacing: 1px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 20px;
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+        //Efecto para que el propio usuario estire el titulo
+        resize: both;
+    }
+}

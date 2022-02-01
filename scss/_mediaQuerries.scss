@@ -1,276 +1,300 @@
-@media screen and (max-width: 480px) {
-    body {
-        header {
-            .conjunto {
-                justify-content: center;
-                margin-bottom: 10px;
-            }
-            .lista {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-        .conteiner-abuelo {
-            height: 2200px;
-            gap: 2rem;
-            grid-template-columns: 100%;
-            grid-template-rows: 90px 300px 300px 300px 300px 300px 300px;
-            grid-template-areas: "ubicacion" "container1" "container2 " "container3" "container4" "container5" "container6";
-        }
-        .cajaAbuelo {
-            height: 1000px;
-        }
-        .anuncio {
-            height: 200px;
-        }
-        .ultimoLan {
-            height: 1400px;
-            gap: 2rem;
-            grid-template-columns: 100%;
-            grid-template-rows: 300px 300px 300px 300px;
-            grid-template-areas: "caja1" "caja2" "caja3 " "caja4";
-            .caja1 img,
-            .caja4 img {
-                width: 200px;
-            }
-        }
-        .consulta {
-            width: 100%;
-            text-align: center;
-            flex-direction: column;
-            .idea {
-                img {
-                    width: 25px;
+    @media screen and (max-width: 480px) {
+        body {
+            header {
+                .conjunto {
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+                .lista {
+                    flex-direction: column;
+                    text-align: center;
                 }
             }
-        }
-        .general {
-            flex-direction: column;
-            height: 1500px;
-            .razones {
+            .conteiner-abuelo {
+                height: 2200px;
+                gap: 2rem;
+                grid-template-columns: 100%;
+                grid-template-rows: 90px 300px 300px 300px 300px 300px 300px;
+                grid-template-areas: "ubicacion" "container1" "container2 " "container3" "container4" "container5" "container6";
+            }
+            .cajaAbuelo {
+                height: 1000px;
+            }
+            .anuncio {
+                height: 200px;
+            }
+            .ultimoLan {
+                height: 1400px;
+                gap: 2rem;
+                grid-template-columns: 100%;
+                grid-template-rows: 300px 300px 300px 300px;
+                grid-template-areas: "caja1" "caja2" "caja3 " "caja4";
+                .caja1 img,
+                .caja4 img {
+                    width: 200px;
+                }
+            }
+            .consulta {
+                width: 100%;
+                text-align: center;
+                flex-direction: column;
+                .idea {
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+            .general {
+                flex-direction: column;
+                height: 1500px;
+                .razones {
+                    width: 80%;
+                    align-items: center;
+                    .razon1 {
+                        margin: 30px 0px;
+                        width: 80%;
+                    }
+                    .razon2 {
+                        margin: 30px 0px;
+                        width: 80%;
+                    }
+                    .razon3 {
+                        margin: 30px 0px;
+                        width: 80%;
+                    }
+                }
+                .imagenes {
+                    width: 100%;
+                    align-items: center;
+                    img {
+                        width: 250px;
+                    }
+                    .imagen1 {
+                        align-self: center;
+                        width: 50%;
+                        margin-bottom: 70px;
+                    }
+                    .imagen2 {
+                        align-self: center;
+                        width: 50%;
+                    }
+                }
+            }
+            .tituloBeneficio {
+                width: 100%;
+            }
+            .beneficiosAdicionales {
+                .contenedor1 {
+                    width: 90%;
+                }
+                .contenedor2 {
+                    width: 90%;
+                }
+                .contenedor3 {
+                    width: 90%;
+                }
+            }
+            .mapa {
                 width: 80%;
-                align-items: center;
-                .razon1 {
-                    margin: 30px 0px;
-                    width: 80%;
-                }
-                .razon2 {
-                    margin: 30px 0px;
-                    width: 80%;
-                }
-                .razon3 {
-                    margin: 30px 0px;
-                    width: 80%;
-                }
+                margin: auto;
             }
-            .imagenes {
-                width: 100%;
-                align-items: center;
-                img {
-                    width: 250px;
-                }
-                .imagen1 {
-                    align-self: center;
-                    width: 50%;
-                    margin-bottom: 70px;
-                }
-                .imagen2 {
-                    align-self: center;
-                    width: 50%;
-                }
-            }
-        }
-        .tituloBeneficio {
-            width: 100%;
-        }
-        .beneficiosAdicionales {
-            .contenedor1 {
-                width: 90%;
-            }
-            .contenedor2 {
-                width: 90%;
-            }
-            .contenedor3 {
-                width: 90%;
-            }
-        }
-        .mapa {
-            width: 80%;
-            margin: auto;
-        }
-        .img404 {
-            width: 70vh;
-        }
-        //PAGINA 404
-        .container-amplio {
             .img404 {
-                width: 100%;
-                text-align: center;
-                img {
-                    width: 350px;
-                }
+                width: 70vh;
             }
-            .titulos404 {
-                font-size: 1.2rem;
-                text-align: center;
-            }
-        }
-        // CABLES
-        .container-magsafe {
-            .parrafo-magsafe {
-                width: 90%;
-            }
-        }
-        .container-img-magsafe {
-            .imagenes-magsafe {
-                .img1-magsafe {
-                    align-self: center;
-                    width: 140px;
-                }
-                .img2-magsafe {
-                    align-self: center;
-                    width: 240px;
-                }
-            }
-        }
-        .footer {
-            .container-footer-all {
-                .container-body {
-                    flex-wrap: wrap;
-                    .column2 {
-                        margin-top: 40px;
+            // TEMPLADOS
+            .clasificacion {
+                padding: 20px;
+                .clasificacion-titulo {
+                    h2 {
+                        text-align: center;
+                        span {
+                            display: none;
+                        }
                     }
-                    .column3 {
-                        margin-top: 40px;
+                }
+                .info-clasificacion {
+                    width: 80%;
+                    height: 200px;
+                }
+            }
+            //PAGINA 404
+            .container-amplio {
+                .img404 {
+                    width: 100%;
+                    text-align: center;
+                    img {
+                        width: 350px;
+                    }
+                }
+                .titulos404 {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+            // CABLES
+            .container-magsafe {
+                .parrafo-magsafe {
+                    width: 90%;
+                }
+            }
+            .container-img-magsafe {
+                .imagenes-magsafe {
+                    .img1-magsafe {
+                        align-self: center;
+                        width: 140px;
+                    }
+                    .img2-magsafe {
+                        align-self: center;
+                        width: 240px;
+                    }
+                }
+            }
+            .footer {
+                .container-footer-all {
+                    .container-body {
+                        flex-wrap: wrap;
+                        .column2 {
+                            margin-top: 40px;
+                        }
+                        .column3 {
+                            margin-top: 40px;
+                        }
                     }
                 }
             }
         }
     }
-}
-
-@media screen and (min-width: 481px) and (max-width:768px) {
-    body {
-        header {
-            .conjunto {
-                justify-content: center;
-                margin-bottom: 10px;
+    
+    @media screen and (min-width: 481px) and (max-width:768px) {
+        body {
+            header {
+                .conjunto {
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+                .lista {
+                    flex-direction: column;
+                    text-align: center;
+                }
             }
-            .lista {
+            .conteiner-abuelo {
+                width: 90%;
+                margin: 10px auto;
+                height: 1130px;
+                gap: 1.3rem;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: 60px 300px 300px 300px;
+                grid-template-areas: "ubicacion ubicacion" "container1 container2 ""container3 container4" "container5 container6";
+            }
+            .cajaAbuelo {
+                height: 1000px;
+            }
+            .ultimoLan {
+                height: 1500px;
+                gap: 2rem;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 300px 300px 300px;
+                grid-template-areas: "caja1 caja1" "caja2 caja3" "caja4 caja4";
+                .caja1 {
+                    flex-direction: row;
+                    text-align: center;
+                    justify-content: center;
+                    img {
+                        width: 280px;
+                    }
+                }
+                .caja4 {
+                    flex-direction: row;
+                    text-align: center;
+                    justify-content: center;
+                    img {
+                        width: 280px;
+                    }
+                }
+            }
+            .consulta {
+                width: 100%;
+                text-align: center;
+                .idea {
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+            .general {
                 flex-direction: column;
-                text-align: center;
-            }
-        }
-        .conteiner-abuelo {
-            width: 90%;
-            margin: 10px auto;
-            height: 1130px;
-            gap: 1.3rem;
-            grid-template-columns: repeat(2, 50%);
-            grid-template-rows: 60px 300px 300px 300px;
-            grid-template-areas: "ubicacion ubicacion" "container1 container2 ""container3 container4" "container5 container6";
-        }
-        .cajaAbuelo {
-            height: 1000px;
-        }
-        .ultimoLan {
-            height: 1500px;
-            gap: 2rem;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 300px 300px 300px;
-            grid-template-areas: "caja1 caja1" "caja2 caja3" "caja4 caja4";
-            .caja1 {
-                flex-direction: row;
-                text-align: center;
-                justify-content: center;
-                img {
-                    width: 280px;
-                }
-            }
-            .caja4 {
-                flex-direction: row;
-                text-align: center;
-                justify-content: center;
-                img {
-                    width: 280px;
-                }
-            }
-        }
-        .consulta {
-            width: 100%;
-            text-align: center;
-            .idea {
-                img {
-                    width: 25px;
-                }
-            }
-        }
-        .general {
-            flex-direction: column;
-            height: 1450px;
-            .razones {
-                width: 100%;
-                align-items: center;
-                .razon1 {
-                    margin: 30px 0px;
-                    width: 80%;
-                }
-                .razon2 {
-                    margin: 30px 0px;
-                    width: 80%;
-                }
-                .razon3 {
-                    margin: 30px 0px;
-                    width: 80%;
-                }
-            }
-            .imagenes {
-                width: 100%;
-                img {
-                    margin: 30px;
-                }
-                .imagen1 {
-                    align-self: center;
-                }
-                .imagen2 {
-                    align-self: center;
-                }
-            }
-        }
-        .mapa {
-            width: 90%;
-            margin: auto;
-        }
-        //PAGINA 404
-        .container-amplio {
-            .img404 {
-                width: 100%;
-                text-align: center;
-                img {
-                    width: 450px;
-                }
-            }
-            .titulos404 {
-                font-size: 1.2rem;
-                text-align: center;
-            }
-        }
-        .footer {
-            .container-footer-all {
-                width: 100%;
-                .container-body {
-                    flex-wrap: wrap;
-                    .column1 {
-                        max-width: 100%;
+                height: 1450px;
+                .razones {
+                    width: 100%;
+                    align-items: center;
+                    .razon1 {
+                        margin: 30px 0px;
+                        width: 80%;
                     }
-                    .column2 {
-                        margin-top: 40px;
+                    .razon2 {
+                        margin: 30px 0px;
+                        width: 80%;
                     }
-                    .column3 {
-                        margin-top: 40px;
+                    .razon3 {
+                        margin: 30px 0px;
+                        width: 80%;
+                    }
+                }
+                .imagenes {
+                    width: 100%;
+                    img {
+                        margin: 30px;
+                    }
+                    .imagen1 {
+                        align-self: center;
+                    }
+                    .imagen2 {
+                        align-self: center;
+                    }
+                }
+            }
+            .mapa {
+                width: 90%;
+                margin: auto;
+            }
+            // TEMPLADOS
+            .clasificacion {
+                padding: 20px;
+                .info-clasificacion {
+                    width: 80%;
+                    height: 200px;
+                }
+            }
+            //PAGINA 404
+            .container-amplio {
+                .img404 {
+                    width: 100%;
+                    text-align: center;
+                    img {
+                        width: 450px;
+                    }
+                }
+                .titulos404 {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+            .footer {
+                .container-footer-all {
+                    width: 100%;
+                    .container-body {
+                        flex-wrap: wrap;
+                        .column1 {
+                            max-width: 100%;
+                        }
+                        .column2 {
+                            margin-top: 40px;
+                        }
+                        .column3 {
+                            margin-top: 40px;
+                        }
                     }
                 }
             }
         }
     }
-}
